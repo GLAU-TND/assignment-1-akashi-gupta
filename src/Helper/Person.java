@@ -72,8 +72,9 @@ public class Person implements Comparable<Person> {
                     "-------- * -------- * -------- * --------";
     }
 
+    //compareTo method for comparing objects of person class
     @Override
-    public int compareTo(Person o) {
-        return 0;
+    public int compareTo(Person newPerson) {
+        return this.getFirstName().compareTo(newPerson.getFirstName());
     }
 }
