@@ -1,3 +1,5 @@
+package Helper;
+
 public class Node<T> {
     private T data;         //Data of node
     private Node<T> next;   //Self referential data
@@ -22,4 +24,10 @@ public class Node<T> {
         this.next = next;
     }
 
+    @Override
+    public String toString() {
+        return "Helper.Node{" +
+                "data=" + data +
+                '}';
+    }
 }
